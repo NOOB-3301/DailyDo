@@ -1,20 +1,12 @@
 import { useLocalSearchParams } from 'expo-router';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
-export default function DetailsScreen() {
-  const { id } = useLocalSearchParams();
+export default function TaskScreen() {
+  const { task } = useLocalSearchParams(); // 'task' comes from [task].tsx
 
   return (
-    <View style={styles.container}>
-      <Text>Details of task 3{id} </Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Task ID: {task}</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});

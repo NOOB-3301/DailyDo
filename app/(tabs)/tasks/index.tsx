@@ -11,7 +11,7 @@ const tasks = [
 
 const TaskItem = ({ title,id }: { title: string, id:string }) => (
   <View style={styles.taskItem}>
-    <Link href={`/tasks/${id}`}>
+    <Link href={`/tasks/${id}`} asChild>
       <Text style={styles.taskText}>{title}</Text>
     </Link>
   </View>
