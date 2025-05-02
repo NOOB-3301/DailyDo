@@ -6,7 +6,7 @@ export default function DetailsScreen() {
 
   return (
     <View style={styles.container}>
-      <Text>Details of task {id} </Text>
+      <Text>Details of task 3{id} </Text>
     </View>
   );
 }
